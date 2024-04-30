@@ -28,6 +28,7 @@ const Filmes = () => {
       <TextInput
         style={styles.input}
         placeholder="Digite o gênero do filme em inglês"
+        placeholderTextColor="gray"
         value={genero}
         onChangeText={text => setGenero(text)}
       />
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: 20,
+    backgroundColor: "black",
   },
   input: {
     width: "100%",
@@ -58,10 +60,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#ccc",
     borderRadius: 5,
+    color: "white",
   },
   filme: {
     marginTop: 5,
     fontSize: 16,
+    color: "white",
   },
 });
 
